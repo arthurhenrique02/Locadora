@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <locale.h>
 #include <unistd.h> // biblioteca para linux
 
 
@@ -72,6 +73,7 @@ void carros();
 
 int main(int argc, char *argv[])
 {
+    setlocale(LC_ALL, "Portuguese");
     // declarando variáveis
     int         inicio; // variável para solicitar qual opção o usuário deseja
     cadastros  *usuario_cadastrado; // variável de cadastro
